@@ -1,2 +1,11 @@
-package org.example;public class Testng_Class {
+package org.example;
+
+import org.testng.annotations.Test;
+
+public class Testng_Class {
+    @Test
+    void setup(){
+ System.out.println("Hii");
+    }
+
 }
