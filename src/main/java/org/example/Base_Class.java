@@ -26,6 +26,7 @@ public class Base_Class {
         options.setApp("C:\\Users\\HP\\AndroidStudioProjects\\android-apidemos\\app\\build\\outputs\\apk\\debug\\app-debug.apk");
 
     androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4724"), options);
+
     androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
 @AfterClass
