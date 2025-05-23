@@ -13,43 +13,30 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 
     <dependencies>
 
-            <!-- Update to the latest compatible versions -->
-            <dependency>
-                <groupId>org.seleniumhq.selenium</groupId>
-                <artifactId>selenium-java</artifactId>
-                <version>4.18.1</version>  <!-- Check for latest version -->
-            </dependency>
+        <!-- Appium Java Client -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>8.6.0</version> <!-- Updated to 8.5.1 (stable) -->
+        </dependency>
 
-            <dependency>
-                <groupId>io.appium</groupId>
-                <artifactId>java-client</artifactId>
-                <version>8.3.0</version>  <!-- Check for latest version -->
-            </dependency>
-
-
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+        <!-- Selenium Java (full) -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-remote-driver</artifactId>
-            <version>4.29.0</version>
+            <artifactId>selenium-java</artifactId>
+            <version>4.11.0</version> <!-- Compatible with Appium 8.5.1 -->
         </dependency>
+
+        <!-- TestNG -->
+
 
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.10.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>7.9.0</version>
         </dependency>
 
     </dependencies>
