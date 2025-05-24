@@ -29,6 +29,7 @@ public class Appium_demo extends Base_Class{
         androidDriver.findElement(By.id("android:id/checkbox")).click();
         androidDriver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
         String alertTitle = androidDriver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id='android:id/alertTitle']")).getText();
+        System.out.println(alertTitle);
         Assert.assertEquals(alertTitle,"WiFi settings");
         androidDriver.findElement(By.id("android:id/edit")).sendKeys("Pratyush");
         androidDriver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
