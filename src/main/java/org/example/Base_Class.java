@@ -39,7 +39,13 @@ public class Base_Class {
                 "elementId", ((RemoteWebElement) element).getId(),
                 "duration", 2000 ));
     }
-
+    public void swipeAction(WebElement element,String Direction)
+    {
+        ((JavascriptExecutor) androidDriver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "direction",Direction,
+                "percent",0.75));
+    }
 @AfterClass
     public void CloseMethod(){
         androidDriver.quit();
